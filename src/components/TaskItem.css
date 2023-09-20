@@ -1,0 +1,22 @@
+.taskItem:hover  .taskItem__delete {
+    display: block !important;
+    transition: display 0.5s linear;
+}
+
+.circle, .circle--active {
+    --w: 24px; 
+
+    width: var(--w);
+    height: var(--w);
+    border: 1.5px solid #8040ea;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle--active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #8040ea, #1d95e6);
+    border: 1.5px solid linear-gradient(45deg, #8040ea, #1d95e6);
+}

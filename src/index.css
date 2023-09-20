@@ -1,0 +1,81 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #8040ea;
+  --color-second: #efefef;
+  --bg-card: #fff;
+  --color-third: #404040;
+}
+
+[data-theme='dark'] {
+  --color-primary: #fff;
+  --color-second: #000;
+  --bg-card: #28283d;
+  --color-third: #eee;
+}
+
+body, #root {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-second) !important;
+}
+
+#root {
+  min-width: 100%;
+}
+
+/* -------------------- */
+/* Pallete Colors */
+.bg-card {
+  background: var(--bg-card);
+}
+
+.bg-color-primary {
+  background-color: var(--color-primary);
+}
+
+.text-color-primary {
+  color: var(--color-third) !important;
+}
+/* -------------------- */
+
+main {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+#btnDeleteAllCompleteTask {
+  cursor: pointer;
+}
+
+.cardTaskFilter {
+  cursor: pointer;
+}
+
+.activeLink {
+  color: var(--color-primary);
+  font-weight: 700;
+  transform: color 0.5s ease, font-weight 0.5s ease;
+}
+
+input::placeholder {
+  color: var(--color-third) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .cardTask {
+    width: 480px !important;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .cardTask {
+    width: 520px !important;
+  }
+}
